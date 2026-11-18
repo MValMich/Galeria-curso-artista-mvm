@@ -1,0 +1,169 @@
+body{
+   background: url(./img/background.jpg);
+   background-size:cover;
+   box-sizing: border-box;
+   font-size: calc(0.75rem + 1.5vw);
+}
+
+/* NAVEGACION */
+nav {
+        background: linear-gradient(90deg,black,grey,black);
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        box-sizing: border-box;
+        width: 95%; 
+        margin: auto;
+        padding: 0.3rem;
+        border: solid 1px;
+      }
+button{
+    font-size: calc(0.5rem + 1vw);
+    font-weight: bold;
+    height: 3rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+      /* menu-acerca */
+      .ul-oculta-acerca {
+        display:none;
+      }
+      .ul-visible-acerca {
+        display:block;
+      }
+      /* menu-obras */
+      .ul-oculta-obras {
+        display:none;
+      }
+      .ul-visible-obras {
+        display:block;
+        /* text-align: ; */
+      }
+      /* menu-cursos */
+      .ul-oculta-cursos {
+        display:none;
+      }
+      .ul-visible-cursos {
+        display:block;
+        /* text-align: ; */
+      }
+      /* menu-home */
+      .ul-oculta-home {
+        display:none;
+      }
+      .ul-visible-home {
+        display:block;
+        /* text-align: ; */
+      }
+
+      a{
+        text-decoration:dashed;
+        color: darkorange;
+      }
+
+/* PRESENTACION */
+#div-principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    /* Se ajusta automáticamente a partir de 200px */
+    gap: 1rem;
+     /* Utiliza "rem" en lugar de porcentaje para una mayor consistencia */
+    padding: 0.5rem;
+    /* Agrega un poco de espacio alrededor de los elementos */
+    width: 90%; 
+    height: auto;
+    background: linear-gradient(90deg, grey, white,grey);
+    border: solid 1px;
+    margin: auto;
+    opacity: 0.9;
+}
+#div-texto {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    border: solid 1px;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 1rem;
+    box-sizing: border-box;
+    /* display:flex; */
+    /* justify-content:center;
+    align-items:center; */
+}
+
+#div-pinturas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border: solid 2px yellow; */
+    /* margin: 1rem; */
+}
+.div-img-pinturas{
+  font-size: calc(0.75rem + 1vw);
+  text-align:center;
+      border: solid 2px ;
+    margin: 0.5rem auto;
+    /* padding: 0.5rem; */
+    justify-items: center;
+    cursor: pointer;
+    background: linear-gradient(90deg, grey, white,grey);
+}
+
+img {
+    width: 100%; 
+    height: auto; /* Mantiene la proporción de la imagen */
+    border: solid 1px;
+}
+.img-pinturas-vertical{
+  width:20rem;
+  height:auto;
+  border:solid 1px;
+}
+.img-pinturas-horizontal{
+  width:25rem;
+  height:auto;
+  border:solid 1px;
+}
+
+.img-expo {
+  width:40%;
+  height:auto;
+  border:solid 1px;
+}
+iframe {
+    width: 100%; 
+    height: 560px; /* Mantiene la proporción de la imagen */
+    border: solid 1px;
+}
+
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 600px) {
+nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        gap: 0.3rem;
+            box-sizing: border-box;
+            padding: 0.3rem;
+            margin:0;
+              border: solid 1px;
+      }
+
+   #div-presentacion {
+        grid-template-columns: 1fr;
+         /* Coloca los elementos en una sola columna en pantallas pequeñas */
+         gap: 0.5rem;
+    } 
+    
+iframe {
+    width: 100%; 
+    height: 315px; /* Mantiene la proporción de la imagen */
+    border: solid 1px;
+}
+}
+
