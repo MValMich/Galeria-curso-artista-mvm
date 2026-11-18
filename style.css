@@ -118,11 +118,13 @@ img {
     border: solid 1px;
 }
 .img-pinturas-vertical{
+  touch-action:pinch-zoom;
   width:20rem;
   height:auto;
   border:solid 1px;
 }
 .img-pinturas-horizontal{
+  touch-action:pinch-zoom;
   width:25rem;
   height:auto;
   border:solid 1px;
