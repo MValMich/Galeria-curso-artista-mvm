@@ -86,9 +86,6 @@ button{
     position: relative;
     padding: 1rem;
     box-sizing: border-box;
-    /* display:flex; */
-    /* justify-content:center;
-    align-items:center; */
 }
 
 #div-pinturas {
@@ -98,8 +95,6 @@ button{
     gap: 1rem;
     justify-content: center;
     box-sizing: border-box;
-    /* border: solid 2px yellow; */
-    /* margin: 1rem; */
 }
 .div-img-pinturas{
   font-size: calc(0.75rem + 1vw);
@@ -118,12 +113,12 @@ img {
     border: solid 1px;
 }
 .img-pinturas-vertical{
-  width:20rem;
+  width:19rem;
   height:auto;
   border:solid 1px;
 }
 .img-pinturas-horizontal{
-  width:25rem;
+  width:22rem;
   height:auto;
   border:solid 1px;
 }
