@@ -7,7 +7,7 @@ body{
 
 /* NAVEGACION */
 nav {
-        background: linear-gradient(90deg,black,grey,black);
+        background: linear-gradient(90deg,grey,black,grey);
         display: flex;
         flex-direction: row;
         justify-content:space-around;
@@ -75,7 +75,7 @@ button{
     width: 90%; 
     height: auto;
     background: linear-gradient(90deg, grey, white,grey);
-    border: solid 1px;
+    /* border: solid 1px; */
     margin: auto;
     opacity: 0.9;
 }
@@ -87,7 +87,14 @@ button{
     padding: 1rem;
     box-sizing: border-box;
 }
-
+#div-titulos {
+  /* background: linear-gradient(90deg, grey, white,grey); */
+  background: linear-gradient(90deg,black,rgb(34, 32, 32),grey);
+  color: darkorange;
+  margin: 0%;
+  text-align:center;
+  opacity:0.9;
+}
 #div-pinturas {
     width: 100%;
     display: flex;
@@ -124,7 +131,7 @@ img {
 }
 
 .img-expo {
-  width:40%;
+  width:50%;
   height:auto;
   border:solid 1px;
 }
